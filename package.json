@@ -4,7 +4,7 @@
   "description": "App to create a Telecommunications Business Proposal in PDF.",
   "main": "src/js/index.js",
   "scripts": {
-    "dev": "nodemon src/js/index.js"
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
