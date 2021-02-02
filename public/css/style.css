@@ -7,18 +7,39 @@
 /* HEADER */
 header {
     width: 100%;
-    padding: 10px;
-    background-color: darkgrey;
     display: flex;
-    flex: 1;
     flex-direction: column;
     align-items: center;
+}
+
+header .menu {
+    background: deepskyblue;
+    width: 100%;
+}
+
+header .navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style: none;
+    background: deepskyblue;
+}
+  
+ header .navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+}
+  
+header .navigation a:hover {
+    background: #1565C0;
 }
 
 /* MAIN */
 main {
     width: 100%;
-    min-height: 300px;
+    min-height: 500px;
     padding: 10px;
     display: flex;
     flex: 1;
