@@ -4,17 +4,22 @@
     outline: none;
 }
 
-/* HEADER */
-header {
-    width: 100%;
+/* MAIN */
+main {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+}
+
+/* HEADER */
+header .logo {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
 
 header .menu {
     background: deepskyblue;
-    width: 100%;
 }
 
 header .navigation {
@@ -36,25 +41,34 @@ header .navigation a:hover {
     background: #1565C0;
 }
 
-/* MAIN */
-main {
-    width: 100%;
-    min-height: 500px;
-    padding: 10px;
+/* SECTION */
+section {
+    padding: 20px;
     display: flex;
-    flex: 1;
-    flex-direction: column;
+    flex-flow: column;
+    justify-content: center;
     align-items: center;
 }
 
-/* FOOTER */
-footer {
-    width: 100%;
-    min-height: 50px;
-    background-color: lightgray;
+/* FORM SLICE */
+.slice {
+    border-radius: 25px;
+    background-color: lightgrey;
+    border: solid 2px black;
+    padding: 20px;
+    min-width: 500px;
+    display: block;
+}
+
+.title {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    padding: 5px;
     display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-flow: column;
 }
