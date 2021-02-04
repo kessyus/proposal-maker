@@ -1,6 +1,7 @@
 // modulos e constantes
 const express = require('express');
 const path = require('path');
+const bodyParser = require('body-parser');
 const formularioCtrl = require('./controllers/formulario');
 const port = process.env.PORT || 5000;
 
@@ -8,6 +9,8 @@ const port = process.env.PORT || 5000;
 const app = express();
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, '/public')));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
 
 // rotas
 app.get('/', (req, res, next) => {
