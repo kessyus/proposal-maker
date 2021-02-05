@@ -7,25 +7,23 @@ const getPage = (req, res, next) => {
 }
 
 const postPage = (req, res, next) => {
-    console.log(req.body);
 
     const body = req.body;
 
+    // cria a viewModel
     const viewModel = {
         name: body.name,
         email: body.email,
         birthDate: body.birthDate
     }
 
+    // une a viewModel com o html
     var htmlText = fs.readFileSync('./views/formulario-pdf.ejs', 'utf-8');
-    
     var htmlRenderized = ejs.render(htmlText, viewModel);
 
-    console.log(htmlRenderized);
-
+    // define parametros e gera PDF
     let file = { content: htmlRenderized };
     let options = { format: 'A4' };
-
     html_to_pdf.generatePdf(file, options)
         .then(pdfBuffer => {
             res.contentType("application/pdf");
