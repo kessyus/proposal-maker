@@ -2,31 +2,41 @@ const fs = require('fs');
 const ejs = require('ejs');
 const html_to_pdf = require('html-pdf-node');
 
-const sexoModel = require('../models/sexo-model');
-const estadoCivilModel = require('../models/estado-civil-model');
+const servicesModel = require('../models/services-model');
+const bandwidthModel = require('../models/bandwidth-model');
+const states = require('../json/states.json');
 
 const getPage = (req, res, next) => {
 
-    // Sexo
-    const sexoItensViewModel = sexoModel.getAllSexo().map((item) => {
+    // Services
+    const servicesItemViewModel = servicesModel.getAllServices().map((item) => {
+        return {
+            value: item.id,
+            label: item.descricao
+        }
+    })    
+    
+    // Bandwidth
+    const bandwidthItemViewModel = bandwidthModel.getAllBandwidth().map((item) => {
         return {
             value: item.id,
             label: item.descricao
         }
     })
 
-    // Estado Civil
-    const estadoCivilItensViewModel = estadoCivilModel.getAllEstadoCivil().map((item) => {
+    // States
+    const statesItemViewModel = states.UF.map((item) => {
         return {
             value: item.id,
-            label: `${item.id} - ${item.descricao}`
+            label: item.sigla
         }
     })
-    
+
     // ViewModel
     const getViewModel = {
-        sexo: sexoItensViewModel,
-        estadoCivil: estadoCivilItensViewModel
+        services: servicesItemViewModel,
+        bandwidth: bandwidthItemViewModel,
+        state: statesItemViewModel
     }
 
     res.render('formulario', getViewModel);

@@ -1,11 +1,15 @@
 const data = [
     {
         id: '1',
-        descricao: 'Masculino'
+        descricao: 'MPLS'
     },
     {
         id: '2',
-        descricao: 'Feminino'
+        descricao: 'Dedicated Internet Access'
+    },
+    {
+        id: '3',
+        descricao: 'Broadband Internet Access'
     }
 ]
 
@@ -18,6 +22,6 @@ const getAll = () => {
 }
 
 module.exports = {
-    getAllSexo: getAll,
-    getSexoPorId: getById
+    getAllServices: getAll,
+    getServicesById: getById
 }

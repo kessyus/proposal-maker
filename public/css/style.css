@@ -18,7 +18,6 @@ body {
 
 /* HEADER */
 header {
-  padding: 10px;
   width: 100%;
 }
 
@@ -29,7 +28,7 @@ header .logo {
 }
 
 header .menu {
-  background: #665544;
+  background: #557a95;
 }
 
 header .navigation {
@@ -37,7 +36,7 @@ header .navigation {
   flex-flow: row wrap;
   justify-content: center;
   list-style: none;
-  background: #665544;
+  background: #557a95;
 }
 
 header .navigation a {
@@ -48,7 +47,7 @@ header .navigation a {
 }
 
 header .navigation a:hover {
-  background: coral;
+  background: #7395ae;
 }
 
 /* MAIN */
@@ -63,7 +62,7 @@ main {
 
 /* SECTION */
 section {
-  padding: 20px;
+  padding: 10px;
 }
 
 section p {
@@ -72,18 +71,19 @@ section p {
 
 /* FORM SLICE */
 .slice {
-  color: #665544;
+  color: #5d5c61;
   border-radius: 5px;
-  background-color: #efefef;
-  border: solid 1px #665544;
+  background-color: #938d9441;
+  border: solid 1px #5d5c61;
   padding: 20px;
   min-width: 600px;
 }
 
 .title {
-  border-bottom: 1px solid #665544;
+  border-bottom: 1px solid #5d5c61;
   margin-bottom: 10px;
   font-size: 18px;
+  color: #e27d60;
 }
 
 .form-group {
@@ -115,6 +115,7 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 20px;
 }
 
 .btn {
@@ -122,7 +123,7 @@ select {
   padding: 10px;
   border: thin #ccc solid;
   border-radius: 4px;
-  background-color: coral;
+  background-color: #e27d60;
   color: #fff;
   text-decoration: none;
   text-align: center;
@@ -136,6 +137,6 @@ footer {
   text-align: center;
   width: 100%;
   padding: 20px;
-  background-color: #665544;
+  background-color: #557a95;
   color: white;
 }
