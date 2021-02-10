@@ -45,17 +45,21 @@
                 placeholder="Insira a data de nascimento"
               />
             </div>
+
             <div class="form-group">
               <label for="gender">Sexo:</label>
-              <input type="radio" name="gender" value="1" checked /> Masculino
-              <input type="radio" name="gender" value="2" /> Feminino
+              <% sexo.map(item => { %> <input type="radio" name="gender"
+              value="<%= item.value %>" <% if(item.value === "1") { %> checked
+              <% } %> />&nbsp;<%= item.label %> <% }) %>
             </div>
+
             <div class="form-group">
               <label for="maritalStatus">Estado civil:</label>
               <select name="maritalStatus">
-                <option value="solteiro">Solteiro</option>
-                <option value="casado">Casado</option>
-                <option value="viuvo">Viúvo</option>
+                <option value="" selected>Selecione</option>
+                <% estadoCivil.map(item => {%>
+                <option value="<%= item.value %>"><%= item.label %></option>
+                <% }) %>
               </select>
             </div>
           </div>
