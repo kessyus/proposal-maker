@@ -6,12 +6,9 @@
   "scripts": {
     "dev": "nodemon index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@gitlab.com/kessyus/proposal-maker.git"
-  },
+  "repository": "git+ssh://git@gitlab.com/kessyus/proposal-maker.git",
   "keywords": [],
-  "author": "",
+  "author": "Kessyus Fófano <kessyus@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://gitlab.com/kessyus/proposal-maker/issues"
@@ -20,7 +17,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
-    "ejs": "^3.1.5",
+    "ejs": "^3.1.6",
     "express": "^4.17.1",
     "html-pdf-node": "^1.0.7",
     "nodemon": "^2.0.7",
