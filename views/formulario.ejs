@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Proposal Maker</title>
   </head>
 
@@ -11,114 +15,125 @@
     <!-- HEADER -->
     <header>
       <div class="logo">
-        <img src="../img/logo.png" />
+        <i class="fa fa-briefcase" aria-hidden="true"></i> Proposal Maker
       </div>
       <div class="menu">
-        <ul class="navigation">
-          <li><a href="/">Home</a></li>
-          <li><a href="formulario">Proposta</a></li>
-          <li><a href="#">Tabela de Preços</a></li>
-          <li><a href="sobre">Sobre</a></li>
-        </ul>
+        <a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
       </div>
     </header>
 
     <!-- CONTENT -->
     <main>
-      <form action="/formulario" method="POST"></form>
-        <section>
-          <!-- DADOS DO CLIENTE -->
-          <div class="slice">
-            <div class="title"><h1>Dados do Cliente</h1></div>
+      <div class="menu_lateral">
+        <a href="/" class="btnMenu"
+          ><i class="fa fa-home" aria-hidden="true"></i
+        ></a>
+        <a href="formulario" class="btnMenu" style="border-right: 3px solid #2088ea"
+          ><i class="fa fa-briefcase" aria-hidden="true"></i
+        ></a>
+        <a href="#" class="btnMenu"
+          ><i class="fa fa-money" aria-hidden="true"></i
+        ></a>
+        <a href="sobre" class="btnMenu"
+          ><i class="fa fa-info-circle" aria-hidden="true"></i
+        ></a>
+        <a href="#" class="btnMenu"
+          ><i class="fa fa-user-circle-o" aria-hidden="true"></i
+        ></a>
+        <a href="#" class="btnMenu"
+          ><i class="fa fa-sign-out" aria-hidden="true"></i
+        ></a>
+      </div>
+      <div class="content">
+        <form action="/formulario" method="POST">
+          <section>
+            <!-- DADOS DO CLIENTE -->
+            <div class="slice">
+              <div class="title"><h1>Dados do Cliente</h1></div>
 
-            <div class="form-group">
-              <label for="company">Empresa:</label>
-              <input type="text" name="company" placeholder="Insira a razão social" />
+              <div class="form-group">
+                <label for="company">Empresa:</label>
+                <input type="text" name="company" placeholder="Insira a razão social" />
+              </div>
+              <div class="form-group">
+                <label for="name">Contato:</label>
+                <input type="text" name="name" placeholder="Insira o nome completo" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="Insira o email" />
+              </div>
             </div>
-            <div class="form-group">
-              <label for="name">Contato:</label>
-              <input type="text" name="name" placeholder="Insira o nome completo" />
-            </div>
-            <div class="form-group">
-              <label for="email">Email:</label>
-              <input type="email" name="email" placeholder="Insira o email" />
-            </div>
-          </div>
-        </section>
+          </section>
 
-        <section>
-          <!-- DADOS DO ENDEREÇO -->
-          <div class="slice">
-            <div class="title"><h1>Endereço</h1></div>
+          <section>
+            <!-- DADOS DO ENDEREÇO -->
+            <div class="slice">
+              <div class="title"><h1>Endereço</h1></div>
 
-            <div class="form-group">
-              <label for="address">Endereço:</label>
-              <input type="text" name="address" placeholder="Insira o endereço de instalação" />
-            </div>
-            <div class="form-group">
-              <label for="city">Cidade:</label>
-              <input type="text" name="city" placeholder="Insira a cidade de instalação"/>
-            </div>
-            <div class="form-group">
-              <label for="state">Estado:</label>
-              <select name="state">
-                <option value="" selected>Selecione...</option>
-                <% state.map(item => {%>
+              <div class="form-group">
+                <label for="address">Endereço:</label>
+                <input type="text" name="address" placeholder="Insira o endereço de instalação" />
+              </div>
+              <div class="form-group">
+                <label for="city">Cidade:</label>
+                <input type="text" name="city" placeholder="Insira a cidade de instalação"/>
+              </div>
+              <div class="form-group">
+                <label for="state">Estado:</label>
+                <select name="state">
+                  <option value="" selected>Selecione...</option>
+                  <% state.map(item => {%>
+                    <option value="<%= item.value %>"><%= item.label %></option>
+                    <% }) %>
+                </select>
+              </div>            
+          </section>
+
+          <section>
+            <!-- DADOS DA COTACAO -->
+            <div class="slice">
+              <div class="title"><h1>Cotação</h1></div>
+
+              <div class="form-group">
+                <label for="service">Produto:</label>
+                <select name="service">
+                  <option value="" selected>Selecione...</option>
+                  <% services.map(item => {%>
                   <option value="<%= item.value %>"><%= item.label %></option>
                   <% }) %>
-              </select>
-            </div>            
-        </section>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="bandwidth">Largura de Banda:</label>
+                <select name="bandwidth">
+                  <option value="" selected>Selecione...</option>
+                  <% bandwidth.map(item => {%>
+                  <option value="<%= item.value %>"><%= item.label %></option>
+                  <% }) %>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="priceType">Tipo de Preço:</label>
+                <input type="radio" name="priceType" value="1" onchange="showDiv('price', this)" checked />&nbsp;Customizado&nbsp;&nbsp;
+                <input type="radio" name="priceType" value="2" onchange="showDiv('price', this)" />&nbsp;Tabela de Preços
+              </div>
+              <div id="price" class="form-group">
+                <label for="priceOTC">Instalação:</label>
+                <input type="number" name="priceOTC" step="any" placeholder="Valores sem impostos" />
+                <label for="priceMRC">Mensalidade:</label>
+                <input type="number" name="priceMRC" step="any" placeholder="Valores sem impostos" />
+              </div>
+            </div>
+          </section>
 
-        <section>
-          <!-- DADOS DA COTACAO -->
-          <div class="slice">
-            <div class="title"><h1>Cotação</h1></div>
-
-            <div class="form-group">
-              <label for="service">Produto:</label>
-              <select name="service">
-                <option value="" selected>Selecione...</option>
-                <% services.map(item => {%>
-                <option value="<%= item.value %>"><%= item.label %></option>
-                <% }) %>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="bandwidth">Largura de Banda:</label>
-              <select name="bandwidth">
-                <option value="" selected>Selecione...</option>
-                <% bandwidth.map(item => {%>
-                <option value="<%= item.value %>"><%= item.label %></option>
-                <% }) %>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="priceType">Tipo de Preço:</label>
-              <input type="radio" name="priceType" value="1" onchange="showDiv('price', this)" checked />&nbsp;Customizado&nbsp;&nbsp;
-              <input type="radio" name="priceType" value="2" onchange="showDiv('price', this)" />&nbsp;Tabela de Preços
-            </div>
-            <div id="price" class="form-group">
-              <label for="priceOTC">Instalação:</label>
-              <input type="number" name="priceOTC" step="any" placeholder="Valores sem impostos" />
-              <label for="priceMRC">Mensalidade:</label>
-              <input type="number" name="priceMRC" step="any" placeholder="Valores sem impostos" />
-            </div>
+          <div class="botao">
+            <button type="submit" class="btn">Gera Proposta</button>
           </div>
-        </section>
-
-        <div class="botao">
-          <button type="submit" class="btn">Enviar</button>
-        </div>
-    </form>
+        </form>
+      </div>
     </main>
 
-    <!-- FOOTER -->
-    <footer>
-      <p>
-        &copy; Copyright 2021. Kessyus Fófano. Todos os direitos reservados.
-      </p>
-    </footer>
   </body>
 </html>
 

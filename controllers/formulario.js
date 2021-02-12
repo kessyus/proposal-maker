@@ -48,11 +48,11 @@ const postPage = (req, res, next) => {
 
     // cria a viewModel
     const postViewModel = {
-        name: body.name,
-        email: body.email,
-        birthDate: body.birthDate,
-        sexo: sexoModel.getSexoPorId(body.gender).descricao,
-        estadoCivil: estadoCivilModel.getEstadoCivilPorId(body.maritalStatus).descricao
+        name: body.address
+        // email: body.email,
+        // birthDate: body.birthDate,
+        // sexo: sexoModel.getSexoPorId(body.gender).descricao,
+        // estadoCivil: estadoCivilModel.getEstadoCivilPorId(body.maritalStatus).descricao
     }
 
     // une a viewModel com o html
