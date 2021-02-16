@@ -12,15 +12,15 @@ const getPage = (req, res, next) => {
     const servicesItemViewModel = servicesModel.getAllServices().map((item) => {
         return {
             value: item.id,
-            label: item.descricao
+            label: item.label
         }
-    })    
+    })
     
     // Bandwidth
     const bandwidthItemViewModel = bandwidthModel.getAllBandwidth().map((item) => {
         return {
             value: item.id,
-            label: item.descricao
+            label: item.label
         }
     })
 

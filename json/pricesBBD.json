@@ -1,0 +1,187 @@
+[
+  {
+    "id": "1",
+    "bandwidth": "1 Mbps",
+    "mrc": "300"
+  },
+  {
+    "id": "2",
+    "bandwidth": "2 Mbps",
+    "mrc": "300"
+  },
+  {
+    "id": "3",
+    "bandwidth": "3 Mbps",
+    "mrc": "300"
+  },
+  {
+    "id": "4",
+    "bandwidth": "4 Mbps",
+    "mrc": "300"
+  },
+  {
+    "id": "5",
+    "bandwidth": "5 Mbps",
+    "mrc": "300"
+  },
+  {
+    "id": "6",
+    "bandwidth": "6 Mbps",
+    "mrc": "300"
+  },
+  {
+    "id": "7",
+    "bandwidth": "7 Mbps",
+    "mrc": "300"
+  },
+  {
+    "id": "8",
+    "bandwidth": "8 Mbps",
+    "mrc": "300"
+  },
+  {
+    "id": "9",
+    "bandwidth": "9 Mbps",
+    "mrc": "300"
+  },
+  {
+    "id": "10",
+    "bandwidth": "10 Mbps",
+    "mrc": "300"
+  },
+  {
+    "id": "11",
+    "bandwidth": "20 Mbps",
+    "mrc": "300"
+  },
+  {
+    "id": "12",
+    "bandwidth": "30 Mbps",
+    "mrc": "300"
+  },
+  {
+    "id": "13",
+    "bandwidth": "40 Mbps",
+    "mrc": "300"
+  },
+  {
+    "id": "14",
+    "bandwidth": "50 Mbps",
+    "mrc": "20.00"
+  },
+  {
+    "id": "15",
+    "bandwidth": "60 Mbps",
+    "mrc": "20.00"
+  },
+  {
+    "id": "16",
+    "bandwidth": "70 Mbps",
+    "mrc": "20.00"
+  },
+  {
+    "id": "17",
+    "bandwidth": "80 Mbps",
+    "mrc": "20.00"
+  },
+  {
+    "id": "18",
+    "bandwidth": "90 Mbps",
+    "mrc": "20.00"
+  },
+  {
+    "id": "19",
+    "bandwidth": "100 Mbps",
+    "mrc": "20.00"
+  },
+  {
+    "id": "20",
+    "bandwidth": "200 Mbps",
+    "mrc": "20.00"
+  },
+  {
+    "id": "21",
+    "bandwidth": "300 Mbps",
+    "mrc": "20.00"
+  },
+  {
+    "id": "22",
+    "bandwidth": "400 Mbps",
+    "mrc": "20.00"
+  },
+  {
+    "id": "23",
+    "bandwidth": "500 Mbps",
+    "mrc": "20.00"
+  },
+  {
+    "id": "24",
+    "bandwidth": "600 Mbps",
+    "mrc": "20.00"
+  },
+  {
+    "id": "25",
+    "bandwidth": "700 Mbps",
+    "mrc": "20.00"
+  },
+  {
+    "id": "26",
+    "bandwidth": "800 Mbps",
+    "mrc": "20.00"
+  },
+  {
+    "id": "27",
+    "bandwidth": "900 Mbps",
+    "mrc": "20.00"
+  },
+  {
+    "id": "28",
+    "bandwidth": "1 Gbps",
+    "mrc": "20.00"
+  },
+  {
+    "id": "29",
+    "bandwidth": "2 Gbps",
+    "mrc": "20.00"
+  },
+  {
+    "id": "30",
+    "bandwidth": "3 Gbps",
+    "mrc": "20.00"
+  },
+  {
+    "id": "31",
+    "bandwidth": "4 Gbps",
+    "mrc": "20.00"
+  },
+  {
+    "id": "32",
+    "bandwidth": "5 Gbps",
+    "mrc": "20.00"
+  },
+  {
+    "id": "33",
+    "bandwidth": "6 Gbps",
+    "mrc": "20.00"
+  },
+  {
+    "id": "34",
+    "bandwidth": "7 Gbps",
+    "mrc": "20.00"
+  },
+  {
+    "id": "35",
+    "bandwidth": "8 Gbps",
+    "mrc": "20.00"
+  },
+  {
+    "id": "36",
+    "bandwidth": "9 Gbps",
+    "mrc": "20.00"
+  },
+  {
+    "id": "37",
+    "bandwidth": "10 Gbps",
+    "mrc": "20.00"
+  }
+]

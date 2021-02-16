@@ -1,16 +1,7 @@
 const data = [
-    {
-        id: '1',
-        descricao: 'MPLS'
-    },
-    {
-        id: '2',
-        descricao: 'Dedicated Internet Access'
-    },
-    {
-        id: '3',
-        descricao: 'Broadband Internet Access'
-    }
+    { id: '1', label: 'MPLS' },
+    { id: '2', label: 'Dedicated Internet Access' },
+    { id: '3', label: 'Broadband Internet Access' }
 ]
 
 const getById = (id) => {

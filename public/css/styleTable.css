@@ -1,0 +1,20 @@
+/* TABELA DE PRECOS */
+
+table,
+th,
+td {
+  border: 2px transparent;
+  text-align: right;
+  padding: 0 10px 0 10px;
+}
+
+th {
+  text-align: center;
+}
+
+/* INPUT TEXT VALORES */
+input {
+  background-color: transparent;
+  border: none !important;
+  text-align: right;
+}
