@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap");
+
+/* PALETA DE CORES */
+$menu: #424242;
+$sidebar: #f3f3f3;
+$button: #2088ea;
+$button_cancel: #d33030;
+$background: #fafafa;
+$border: #e0e0e0;
+$shadow: #888888;
+
+/* APP */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+/* BODY */
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Nunito", sans-serif;
+  background-color: $background;
+  height: 100vh;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: $menu;
+  border-bottom: 1px solid black;
+  color: white;
+  width: 100%;
+  .logo {
+    padding: 20px;
+    font-size: 20px;
+  }
+  .menu {
+    padding: 20px;
+    a {
+      color: white;
+    }
+  }
+}
+
+/* MAIN */
+main {
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
+
+/* SIDEBAR */
+.menu_lateral {
+  margin-right: 10px;
+  background-color: $sidebar;
+  width: 80px;
+  box-shadow: 0px 20px 14px $shadow;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  .btnMenu {
+    box-sizing: border-box;
+    width: 80px;
+    padding: 20px;
+    border-bottom: 1px solid $border;
+    color: black;
+    &.hover {
+      background: $border;
+      border-right: 3px solid $button;
+    }
+  }
+}
+
+/* CONTENT */
+.content {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+  padding: 20px;
+  overflow: auto;
+}
+
+/* SECTION */
+section {
+  padding: 10px;
+  p {
+    text-align: center;
+  }
+}
+
+/* FORM SLICE */
+.slice {
+  color: #5d5c61;
+  border-radius: 5px;
+  background-color: white;
+  border: solid 1px $border;
+  padding: 20px;
+  box-shadow: 0px 2px 2px $shadow;
+}
+
+.title {
+  border-bottom: 1px solid $border;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: $menu;
+}
+
+.form-group {
+  padding: 5px;
+
+  label {
+    margin: 0 10px 10px 0;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="email"] {
+    margin-top: 5px;
+    padding: 5px 10px;
+    border: thin $border solid;
+    border-radius: 3px;
+    width: 96%;
+    font-size: 14px;
+  }
+
+  select {
+    margin-top: 5px;
+    padding: 5px;
+    width: 100%;
+  }
+}
+
+.botao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+
+  .btn {
+    outline: none;
+    padding: 10px;
+    border: thin #ccc solid;
+    border-radius: 4px;
+    background-color: $button;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+}
+
+// TABELAS DE PRECOS
+.lista-opcoes {
+  li {
+    padding: 10px;
+    margin-left: 20px;
+  }
+}
+
+.report {
+  text-decoration: none;
+  color: $menu;
+}

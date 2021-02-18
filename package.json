@@ -4,7 +4,9 @@
   "description": "App to create a Telecommunications Business Proposal in PDF.",
   "main": "src/js/index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "sass": "npx sass --watch ./public/scss/style.scss ./public/css/style.css",
+    "start:debug": "node --inspect-brk=5858 index.js"
   },
   "repository": "git+ssh://git@gitlab.com/kessyus/proposal-maker.git",
   "keywords": [],
@@ -22,5 +24,8 @@
     "html-pdf-node": "^1.0.7",
     "nodemon": "^2.0.7",
     "prettier": "^2.2.1"
+  },
+  "devDependencies": {
+    "sass": "^1.32.7"
   }
 }

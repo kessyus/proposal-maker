@@ -14,7 +14,7 @@ app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "/public")));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// ROTAS INÍCIO
+// *** ROTAS INÍCIO ***
 app.get("/", (req, res, next) => { res.render("index"); });
 // rotas formulario
 app.get("/formulario", formularioCtrl.getFormulario);
@@ -29,8 +29,7 @@ app.get("/precosBBD", precoCtrlBBD.getFormulario);
 app.post("/precosBBD", precoCtrlBBD.postFormulario);
 // rota sobre
 app.get("/sobre", (req, res, next) => { res.render("sobre"); });
-
-// ROTAS FIM
+// *** ROTAS FIM ***
 
 // porta
 app.listen(port, () => {
