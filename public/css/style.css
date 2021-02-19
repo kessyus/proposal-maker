@@ -32,6 +32,7 @@ header .logo {
 }
 header .menu {
   padding: 20px;
+  display: none;
 }
 header .menu a {
   color: white;
@@ -151,6 +152,18 @@ section p {
 .report {
   text-decoration: none;
   color: #424242;
+}
+
+/* MOBILE FIRST */
+@media only screen and (max-width: 600px) {
+  .menu_lateral {
+    display: none;
+  }
+
+  .menu {
+    display: block !important;
+    cursor: pointer;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

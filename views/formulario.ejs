@@ -18,13 +18,13 @@
         <i class="fa fa-briefcase" aria-hidden="true"></i> Proposal Maker
       </div>
       <div class="menu">
-        <a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        <a href="javascript:void(0);" onclick="showMenu()"><i class="fa fa-bars" aria-hidden="true"></i></a>
       </div>
     </header>
 
     <!-- CONTENT -->
     <main>
-      <div class="menu_lateral">
+      <div id="sidebar" class="menu_lateral">
         <a href="/" class="btnMenu"
           ><i class="fa fa-home" aria-hidden="true"></i
         ></a>
@@ -36,12 +36,6 @@
         ></a>
         <a href="sobre" class="btnMenu"
           ><i class="fa fa-info-circle" aria-hidden="true"></i
-        ></a>
-        <a href="#" class="btnMenu"
-          ><i class="fa fa-user-circle-o" aria-hidden="true"></i
-        ></a>
-        <a href="#" class="btnMenu"
-          ><i class="fa fa-sign-out" aria-hidden="true"></i
         ></a>
       </div>
       <div class="content">
@@ -100,7 +94,7 @@
                 <select name="service">
                   <option value="" selected>Selecione...</option>
                   <% services.map(item => {%>
-                  <option value="<%= item.value %>"><%= item.label %></option>
+                  <option value="<%= item.label %>"><%= item.label %></option>
                   <% }) %>
                 </select>
               </div>
@@ -109,7 +103,7 @@
                 <select name="bandwidth">
                   <option value="" selected>Selecione...</option>
                   <% bandwidth.map(item => {%>
-                  <option value="<%= item.value %>"><%= item.label %></option>
+                  <option value="<%= item.label %>"><%= item.label %></option>
                   <% }) %>
                 </select>
               </div>
@@ -139,6 +133,16 @@
 
 <script>
   function showDiv(divId, element) {
-      document.getElementById(divId).style.display = element.value == 1 ? 'block' : 'none';
+    document.getElementById(divId).style.display = element.value == 1 ? 'block' : 'none';
+  }
+
+  // função para mostrar o menu lateral quando a tela for de celular
+  function showMenu() {
+    var x = document.getElementById("sidebar");
+    if (x.style.display === "flex") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "flex";
+    }
   }
 </script>

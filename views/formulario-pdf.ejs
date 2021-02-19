@@ -3,10 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap");
+      main {
+        font-family: "Nunito", sans-serif;
+        margin: 80px;
+        padding: 10px;
+      }
+    </style>
   </head>
   <body>
     <main>
-      <h1><%= name %></h1>
+      <center><h2>Business Proposal</h2></center>
+      <br /><br />
+      <p>Hi <%= name %> from <%= company %>,</p>
+      <p>
+        It is a pleasure to do business with you! Please find below our
+        proposal.
+      </p>
+      <br />
+      <p><b>Term:</b> 1 year</p>
+      <p><b>Currency:</b> BRL</p>
+      <p><b>Service:</b> <%= service %></p>
+      <p><b>Bandwidth:</b> <%= bandwidth %></p>
+      <p><b>Address:</b> <%= address %>, <%= city %> - <%= state %></p>
+      <br />
+      <p>- Values without taxes:</p>
+      <p><b>MRC:</b> R$ <%= priceMRCWithoutTaxes %></p>
+      <p><b>OTC:</b> R$ <%= priceOTCWithoutTaxes %></p>
+      <br />
+      <p>- Values with taxes:</p>
+      <p><b>MRC:</b> R$ <%= priceMRCWithTaxes %></p>
+      <p><b>OTC:</b> R$ <%= priceOTCWithTaxes %></p>
+      <br />
+      <br />
+      <i>
+        Important:<br /><br />1. Are you on-net today already? yes<br />2. What
+        is the technology used on the last mile (fiber, copper, microwave,
+        satellite)? Fiber<br />3. What is your lead time to connect? 60 days
+        estimated<br />4. Please provide MRC and OTC, with and without taxes:
+        See above<br />5. Can we consider your prices as firm? Yes<br />6.
+        Currency: Brazilian Real (BRL)<br />
+      </i>
     </main>
   </body>
 </html>

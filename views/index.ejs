@@ -18,13 +18,15 @@
         <i class="fa fa-briefcase" aria-hidden="true"></i> Proposal Maker
       </div>
       <div class="menu">
-        <a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        <a href="javascript:void(0);" onclick="showMenu()"
+          ><i class="fa fa-bars" aria-hidden="true"></i
+        ></a>
       </div>
     </header>
 
     <!-- CONTENT -->
     <main>
-      <div class="menu_lateral">
+      <div id="sidebar" class="menu_lateral">
         <a href="/" class="btnMenu" style="border-right: 3px solid #2088ea"
           ><i class="fa fa-home" aria-hidden="true"></i
         ></a>
@@ -37,12 +39,6 @@
         <a href="sobre" class="btnMenu"
           ><i class="fa fa-info-circle" aria-hidden="true"></i
         ></a>
-        <a href="#" class="btnMenu"
-          ><i class="fa fa-user-circle-o" aria-hidden="true"></i
-        ></a>
-        <a href="#" class="btnMenu"
-          ><i class="fa fa-sign-out" aria-hidden="true"></i
-        ></a>
       </div>
       <div class="content">
         <p>
@@ -53,3 +49,14 @@
     </main>
   </body>
 </html>
+<script>
+  // função para mostrar o menu lateral quando a tela for de celular
+  function showMenu() {
+    var x = document.getElementById("sidebar");
+    if (x.style.display === "flex") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "flex";
+    }
+  }
+</script>

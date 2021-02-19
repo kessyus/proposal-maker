@@ -40,6 +40,7 @@ header {
   }
   .menu {
     padding: 20px;
+    display: none;
     a {
       color: white;
     }
@@ -167,4 +168,15 @@ section {
 .report {
   text-decoration: none;
   color: $menu;
+}
+
+/* MOBILE FIRST */
+@media only screen and (max-width: 600px) {
+  .menu_lateral {
+    display: none;
+  }
+  .menu {
+    display: block !important;
+    cursor: pointer;
+  }
 }
