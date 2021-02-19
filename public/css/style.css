@@ -144,6 +144,7 @@ section p {
   font-size: 16px;
 }
 
+/* TABELAS DE PRECOS */
 .lista-opcoes li {
   padding: 10px;
   margin-left: 20px;
@@ -152,6 +153,11 @@ section p {
 .report {
   text-decoration: none;
   color: #424242;
+}
+
+/* SOBRE */
+.redes-sociais {
+  color: black;
 }
 
 /* MOBILE FIRST */

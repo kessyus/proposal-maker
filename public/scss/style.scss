@@ -157,7 +157,7 @@ section {
   }
 }
 
-// TABELAS DE PRECOS
+/* TABELAS DE PRECOS */
 .lista-opcoes {
   li {
     padding: 10px;
@@ -168,6 +168,11 @@ section {
 .report {
   text-decoration: none;
   color: $menu;
+}
+
+/* SOBRE */
+.redes-sociais {
+  color: black;
 }
 
 /* MOBILE FIRST */
