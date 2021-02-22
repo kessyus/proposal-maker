@@ -4,14 +4,14 @@ Projeto da primeira etapa do Bootcamp do Infnet. O objetivo do projeto é introd
 
 ## Escopo básico do projeto:
 
-[x] Gerar um web app usando NodeJS e Express;
-[x] O aplicativo deverá permitir imprimir em PDF os campos preenchidos pelo usuário no form;
-[x] Deveremos usar CSS puro, sem nenhum tipo de SCSS;
-[x] Não haverá consulta a banco de dados;
-[x] A view engine será o EJS;
-[x] O MVC será a arquitetura do programa;
-[x] Devemos criar pelo menos dois models para gerar dinamicamente os valores de algum campo do formulário;
-[x] O desenvolvedor deverá fazer o acompanhamento das tarefas através de um quadro no Trello compartilhado com os professores, monitores e coordenador.
+- Gerar um web app usando NodeJS e Express;
+- O aplicativo deverá permitir imprimir em PDF os campos preenchidos pelo usuário no form;
+- Deveremos usar CSS puro, sem nenhum tipo de SCSS;
+- Não haverá consulta a banco de dados;
+- A view engine será o EJS;
+- O MVC será a arquitetura do programa;
+- Devemos criar pelo menos dois models para gerar dinamicamente os valores de algum campo do formulário;
+- O desenvolvedor deverá fazer o acompanhamento das tarefas através de um quadro no Trello compartilhado com os professores, monitores e coordenador.
 
 ## Projeto desenvolvido:
 
