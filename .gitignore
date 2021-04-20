@@ -4,3 +4,4 @@ node_modules/
 .yarnrc
 yarn.lock
 .vscode/
+docs/
